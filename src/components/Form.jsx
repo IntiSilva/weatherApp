@@ -29,16 +29,6 @@ const Form = () => {
                 onSubmit={handleSubmit}
             >
                 <div className="field">
-                    <label htmlFor="city">City</label>
-                    <input
-                        type="text"
-                        id="city"
-                        name="city"
-                        onChange={searchData}
-                        value={city}
-                    />
-                </div>
-                <div className="field">
                     <label htmlFor="country">Country</label>
                     <select
                         id="country"
@@ -55,6 +45,17 @@ const Form = () => {
                         <option value="ES">Spain</option>
                         <option value="PE">Perú</option>
                     </select>
+                </div>
+
+                <div className="field">
+                    <label htmlFor="city">City</label>
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        onChange={searchData}
+                        value={city}
+                    />
                 </div>
 
                 <input
